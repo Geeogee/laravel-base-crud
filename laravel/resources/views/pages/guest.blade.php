@@ -6,6 +6,12 @@
     </title>
 @endsection
 
+@section('links')
+    <a href=" {{ route('home') }} ">
+        Back to Homepage
+    </a>
+@endsection
+
 @section('main')
     <main>
         <ul>

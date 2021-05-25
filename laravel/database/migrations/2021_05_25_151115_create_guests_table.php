@@ -18,10 +18,10 @@ class CreateGuestsTable extends Migration
             
             $table -> string('name', 100);
             $table -> string('lastname', 100);
-            $table -> date('date_of_birth');
-            $table -> string('document_type', 50);
-            $table -> string('document_number', 50);
-            $table -> string('phone_number', 50);
+            $table -> date('date_of_birth') -> nullable();
+            $table -> string('document_type', 50) -> nullable();
+            $table -> integer('document_number') -> nullable();
+            $table -> string('phone_number', 50) -> nullable();
             $table -> string('address', 100) -> nullable();
 
             $table -> timestamps();

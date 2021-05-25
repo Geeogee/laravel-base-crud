@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'GuestController@home') -> name('home');
 Route::get('guest/{id}', "GuestController@guest") -> name('guest');
+Route::get('register/guest', "GuestController@newGuest") -> name('new_guest');
+Route::post('store/guest', 'GuestController@storeGuest') -> name('store_guest');

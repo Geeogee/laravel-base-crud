@@ -6,6 +6,12 @@
     </title>
 @endsection
 
+@section('links')
+    <a href="{{ route('new_guest') }}">
+        Register a new guest!
+    </a>
+@endsection
+
 @section('main')
    <main>
        <ul>
